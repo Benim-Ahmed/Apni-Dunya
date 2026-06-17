@@ -5,6 +5,10 @@
     <title>Apni Dunya | Home</title>
     <link rel="stylesheet" href="Style/Style.css" />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
       rel="website icon"
       type="png"
       href="Assets/icons/Visigraph logo.png"
@@ -58,104 +62,103 @@
       </section>
       <section>
         <h2><span>Shorts</span></h2>
-        <iframe
-          width="24%"
-          height="70%"
-          src="https://www.youtube.com/embed/xQ51rRUq5xc?si=KvXm1Y9OQx8o5PCC"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
 
-        <iframe
-          width="24%"
-          height="70%"
-          src="https://www.youtube.com/embed/BtLyhrCIDRE?si=WbpZ1cpfbz0mcZ8u"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-
-        <iframe
-          width="24%"
-          height="70%"
-          src="https://www.youtube.com/embed/zLn8Ay7gK8g?si=c5wpW8dsUFwtVDy6"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-
-        <iframe
-          width="24%"
-          height="70%"
-          src="https://www.youtube.com/embed/EaMpL1tG7zc?si=Sp8QVdEZKXCIpYLi"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell iframe-container">
+            <iframe
+              src="https://www.youtube.com/embed/xQ51rRUq5xc?si=KvXm1Y9OQx8o5PCC"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="carousel-cell iframe-container">
+            <iframe
+              src="https://www.youtube.com/embed/BtLyhrCIDRE?si=WbpZ1cpfbz0mcZ8u"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="carousel-cell iframe-container">
+            <iframe
+              src="https://www.youtube.com/embed/zLn8Ay7gK8g?si=c5wpW8dsUFwtVDy6"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="carousel-cell iframe-container">
+            <iframe
+              src="https://www.youtube.com/embed/EaMpL1tG7zc?si=Sp8QVdEZKXCIpYLi"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <br />
+        <br />
       </section>
       <section>
         <h2><span>Islamic Quiz</span></h2>
         <a href="Assets/Notes/Seerat AUGUST 2023.pdf" target="_blank"
           ><img
             src="Assets/images/Seerat 3.jpg"
-            alt=""
-            width="30%"
-            height="600px"
+            alt="Seerat Book"
+            class="notes"
         /></a>
         <a href="Assets/Notes/Seerat Course.pdf" target="_blank"
           ><img
             src="Assets/images/Seerat 1.jpg"
-            alt=""
-            width="30%"
-            height="600px"
+            alt="Seerat Course"
+            class="notes"
         /></a>
         <a href="Assets/Notes/سیرت کورس سوالا جوابا.pdf" target="_blank"
           ><img
             src="Assets/images/Seerat 2.jpg"
-            alt=""
-            width="30%"
-            height="600px"
+            alt="Islamic Quiz"
+            class="notes"
         /></a>
       </section>
       <section class="founder">
@@ -166,20 +169,20 @@
           width="300"
           class="clip-circle"
         />
-        <h3>Ahmed Mohiuddin</h3>
+        <h2>Ahmed Mohiuddin</h2>
         <div class="handles">
           <a
-            class="youtube"
-            href="https://youtube.com/@visigraph5233?si=H-7bjhe29sOLszdy"
+            class="linkedIn"
+            href="https://linkedin.com/in/benim-ahmed"
             target="_blank"
-            >YouTube</a
+            >LinkedIn</a
           >
           &nbsp;&nbsp;|&nbsp;&nbsp;
           <a
-            class="instagram"
-            href="https://www.instagram.com/benim_ahmed18/"
+            class="github"
+            href="https://github.com/Benim-Ahmed"
             target="_blank"
-            >Instagram</a
+            >GitHub</a
           >
           &nbsp;&nbsp;|&nbsp;&nbsp;
           <a
@@ -189,21 +192,26 @@
             >Facebook</a
           >
         </div>
-        <h4>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-          atque numquam. Dolorem repellat beatae maiores similique dolores,
-          consequatur tempora est.
+        <h4 class="about">
+          Ahmed Mohiuddin is an aspiring Software Engineering student havings
+          strong concepts of programming fundamentals. He is always eager to
+          learn new skills and dive deep while learning something new.
         </h4>
         <h5>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
-          perspiciatis quidem ut, aliquam eos, repudiandae dicta quos delectus
-          suscipit corporis saepe voluptatum consequuntur hic ducimus a? Fugiat,
-          rerum? Animi obcaecati voluptatum facere commodi, labore, laboriosam
-          nobis quo numquam veritatis, autem deserunt? Libero officiis earum
-          placeat, impedit alias ipsum exercitationem nostrum, debitis atque
-          dicta et non harum asperiores, illum cum rem dignissimos a sunt! A ab
-          recusandae reprehenderit ipsam ut, unde quam sint adipisci sapiente
-          deserunt voluptatem nobis nam maiores inventore.
+          Ahmed has a strong grip on Java, C++, and Logic Design along with a
+          great level of exposure in HTML, CSS, and JavaScript. Additional to
+          these he also have a basic knowledge of python and Databases.
+          Alongside technical learning, Ahmed also bring skills like typing,
+          design sense, problem-solving, and a general curiosity for
+          understanding how things work. His goal? To grow into a all-rounded
+          software engineer with multiple hands-on skills, capable of jumping
+          into creative, technical, or hybrid roles whenever needed. When He's
+          not studying or designing, you'll probably find him watching Turkish
+          drama series, Playing Chess, Rubik's Cube, or playing badminton and
+          cricket. Ahmed love balancing tech with creativity, and creativity
+          with sports keeps him energized and grounded. He's always open to
+          opportunities, learning experiences, and connecting with people from
+          the tech community!
         </h5>
       </section>
     </main>
@@ -214,5 +222,7 @@
       <a href="#" class="footBtn">Refund Policy</a>
       <a href="#" class="copyright footBtn">&copy; 2026 | Apni Dunya</a>
     </footer>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
