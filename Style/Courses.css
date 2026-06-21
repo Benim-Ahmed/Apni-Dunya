@@ -24,6 +24,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
 }
 
 nav a {
@@ -34,9 +35,21 @@ nav a {
     color: white;
 }
 
+.navBtn:hover, .footer:hover {
+    background-color: white;
+    color: #333;
+}
+
 h2 {
     text-align: center;
     padding: 20px;
+}
+
+section h2 span{
+    background: linear-gradient(to right, #f5d836, #bbb812);
+    color: white;
+    padding: 10px 55px;
+    border-radius: 20px;
 }
 
 .posters {
@@ -61,14 +74,12 @@ h2 {
     font-weight: 750;
 }
 
-#liveText {
-    margin: 0px;
-    margin-right: 0px;
+#liveText, #recordedText, #notesText, #guidanceText {
+    padding: 10px;
 }
 
 .post {
     border-radius: 5px;
-    /* border: 1px solid #333; */
     text-decoration: none;
     background-color:ghostwhite;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
@@ -96,6 +107,7 @@ h2 {
 footer {
     background-color: #333;
     overflow: hidden;
+    display: flex;
 }
 
 footer a {
@@ -106,6 +118,34 @@ footer a {
     padding: 20px;
 }
 
-.copyright {
-    float:right;
+.login, .copyright {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .posters {
+        display:block;
+        width: 80%;
+        margin: 0px auto;
+    }
+    
+    .post {
+        margin-bottom: 30px;
+        padding-bottom: 5px;
+    }
+    
+    .live, .recorded, .notes, .guidance {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav, footer {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .login, .copyright {
+        margin-left: 0px;
+    }
 }

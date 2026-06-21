@@ -24,6 +24,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
 }
 
 nav a{
@@ -79,11 +80,14 @@ h2{
     border-radius: 4px;
 }
 
-.Query{
+.Query span{
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 550;
-    /* text-align: left; */
+    background: linear-gradient(to right, #f5d836, #bbb812);
+    color: white;
+    padding: 10px 55px;
+    border-radius: 20px;
 }
 
 input[type="text"],
@@ -119,6 +123,7 @@ input[type="submit"]:hover{
 footer{
     background-color: #333;
     overflow: hidden;
+    display: flex;
 }
 
 footer a{
@@ -129,6 +134,39 @@ footer a{
     color: white;
 }
 
-.copyright {
-    float: right;
+.navBtn:hover, .footBtn:hover {
+    background-color: white;
+    color: #333;
+}
+
+.login, .copyright {
+    margin-left: auto;
+}
+
+@media screen and (width <= 750px) {
+    nav, footer {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .login, .copyright{
+        margin-left: 0px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select{
+        width: 70%;
+    }
+
+    .button {
+        width: 50%;
+    }
+}
+
+@media screen and (width < 420px) {
+    .Query {
+        font-size:larger;
+    }
 }

@@ -215,3 +215,11 @@ section h5 {
         padding-bottom: 7px;
     }
 }
+
+@media screen and (width < 350px) {
+    .handles a {
+        justify-self: center;
+        width: 40%;
+        display: block;
+    }
+}

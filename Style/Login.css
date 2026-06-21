@@ -20,6 +20,7 @@ header h1 {
 nav {
     background-color: #333;
     overflow: hidden;
+    display: flex;
 }
 
 nav a {
@@ -32,6 +33,14 @@ nav a {
 
 #login {
     text-align:center;
+    margin-top: 25px;
+}
+
+#login span{
+    background: linear-gradient(to right, #f5d836, #bbb812);
+    color: white;
+    padding: 10px 55px;
+    border-radius: 20px;
 }
 
 p {
@@ -77,6 +86,7 @@ p a:hover {
 footer {
     background-color: #333;
     overflow: hidden;
+    display: flex;
 }
 
 footer a{
@@ -87,6 +97,35 @@ footer a{
     float: left;
 }
 
-.copyright {
-    float: right;
+.navBtn:hover, .footBtn:hover {
+    background-color: white;
+    color: #333;
+}
+
+.login, .copyright {
+    margin-left: auto;
+}
+
+@media screen and (width < 750px) {
+    nav, footer {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .login, .copyright {
+        margin-left: 0px;
+    }
+
+    input[type="email"], input[type="password"]{
+        width: 70%;
+    }
+
+    #loginButton {
+        width: 50%;
+    }
+}
+
+@media screen and (width < 350px) {
+    p a{
+        display: block;
+    }
 }
