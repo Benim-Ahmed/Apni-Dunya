@@ -142,6 +142,7 @@ footer a {
 @media screen and (max-width: 750px) {
     nav, footer {
         flex-direction: column;
+        position: relative;
         padding: 10px 0px;
     }
 
